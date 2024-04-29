@@ -93,7 +93,7 @@ Technologies used in the project:
 * `PATCH /admin/approve/:id` - Approve an image after reviewing annotations. (Replace ':id' with the image's _id)
 * `PATCH /admin/reject/:id` -  Reject an image after reviewing annotations. (Replace ':id' with the image's _id)
 * `GET /admin/export` - Export approved images in the desired format. (Specify format as a query parameter, e.g., /admin/export?format=csv)
-* `GET /admin/export/:id` - Export annotations of a particular image in the desired format. (Specify format as a query parameter, e.g., /admin/export/<id>?format=csv)
+* `GET /admin/export/:id` - Export annotations of a particular image in the desired format. (Specify format as a query parameter, e.g., /admin/export/<image id>?format=csv)
 
 ### Notes
 1. Backend is deployed on Render. Inactivity may cause delays in requests by 50 seconds or more.
