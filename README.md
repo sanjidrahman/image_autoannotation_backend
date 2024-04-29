@@ -95,7 +95,7 @@ Technologies used in the project:
 * `GET /admin/export` - Export approved images in the desired format. (Specify format as a query parameter, e.g., /admin/export?format=csv)
 * `GET /admin/export/:id` - Export annotations of a particular image in the desired format. (Specify format as a query parameter, e.g., /admin/export/`<image's _id>`?format=csv)
 
-### Notes
+## Notes
 1. Backend is deployed on Render. Inactivity may cause delays in requests by 50 seconds or more.
 2. When "Not Authorized" message is shown, ensure authorization by adding the following header in testing tools like Postman: `Authorization: Bearer <your jwt token>`
 
