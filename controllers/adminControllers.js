@@ -1,5 +1,5 @@
 const Admin = require('../models/adminModel'); // Importing the admin model
-const Image = require('../models/imageModels'); // Importing the image model
+const Image = require('../models/imageModel'); // Importing the image model
 const User = require('../models/userModel'); // Importing the user model
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');

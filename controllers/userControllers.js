@@ -1,5 +1,5 @@
 const User = require('../models/userModel'); // Importing the user model
-const Image = require('../models/imageModels'); // Importing the image model
+const Image = require('../models/imageModel'); // Importing the image model
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const { uploadFile } = require('../config/s3'); // Importing file upload function from S3 configuration
