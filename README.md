@@ -37,7 +37,7 @@ npm install
 <p>3. Setup .env file</p>
 
 ```
-link to the env 
+link to the env file: https://drive.google.com/file/d/1Vru_E4cN_lfNdD_MMqwE2O9EbDezvMye/view?usp=sharing
 ```
 
 <p>4. Start project</p>
