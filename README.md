@@ -25,7 +25,7 @@ Here're some of the project's best features:
 <p>1. Clone project</p>
 
 ```
-https://github.com/sanjidrahman/wasserstoff-BackendTask.git
+git clone https://github.com/sanjidrahman/wasserstoff-BackendTask.git
 ```
 
 <p>2. Install dependencies</p>
