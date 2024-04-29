@@ -172,6 +172,11 @@ const reject = async (req, res) => {
 const exportAllData = async (req, res) => {
     try {
         const format = req.query.format.toLowerCase(); // Get the requested format for exporting
+
+        if(!format) {
+            return res.status(404).json({ message: 'No format selected' })
+        }
+
         const approvedImages = await Image.find({ status: 'Approved' }); // Find all approved images
 
         if (approvedImages.length === 0) {
@@ -208,6 +213,10 @@ const exportData = async (req, res) => {
         const format = req.query.format.toLowerCase();
         const imgId = req.params.id;
 
+        if(!format) {
+            return res.status(404).json({ message: 'No format selected' })
+        }
+
         const imageDetails = await Image.findOne({ _id: imgId });
 
         if (!imageDetails || imageDetails.status !== 'Approved') {
@@ -224,7 +233,7 @@ const exportData = async (req, res) => {
         const compiledData = await parseData(exportedData, format);
 
         if (!compiledData) {
-            return res.status(400).send('Invalid format');
+            return res.status(400).send({ message: 'Invalid format' });
         }
 
         // Set the appropriate headers for download
