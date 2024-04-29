@@ -23,7 +23,7 @@ Here're some of the project's best features:
 *   Restricting access of users by admin
 *   Image storing in S3 Bucket
 *   Auto annotations using AWS Rekognition
-*   Utilised Native Cluster for Scalabily and Performance
+*   Utilized native clustering for scalability and performance.
 
 <h2>🛠️ Installation Steps:</h2>
 
@@ -98,3 +98,7 @@ Technologies used in the project:
 ### Notes
 1. Backend is deployed on Render. Inactivity may cause delays in requests by 50 seconds or more.
 2. When "Not Authorized" message is shown, ensure authorization by adding the following header in testing tools like Postman: `Authorization: Bearer <your jwt token>`
+
+## Contact
+If you encounter any issues or have any questions, please feel free to contact us at [sanjidrahman650@gmail.com](mailto:sanjidrahman650@gmail.com).
+
