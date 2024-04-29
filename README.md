@@ -15,6 +15,7 @@
 
 Here're some of the project's best features:
 
+*   MVC Architecture
 *   Authentication and Authorization system
 *   Utilised mongoose for schema creation and validation
 *   Bcrypt for ecrypting user credentials
