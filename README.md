@@ -9,7 +9,7 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://wsmtbucket.s3.ap-south-1.amazonaws.com/server.png" alt="project-screenshot" width="400" height="700/">
+<img src="https://wsmtbucket.s3.ap-south-1.amazonaws.com/server.png" alt="project-screenshot" width="700" height="400/">
   
 <h2>🧐 Features</h2>
 
