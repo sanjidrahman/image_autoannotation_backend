@@ -7,6 +7,8 @@ const session = require('express-session'); // Importing Express session for ses
 require('dotenv').config(); // Loading environment variables from .env file
 const userRoute = require('./routes/userRoutes'); // Importing user routes
 const adminRoute = require('./routes/adminRoutes'); // Importing user routes
+const { injectSpeedInsights } = require('@vercel/speed-insights');
+injectSpeedInsights();
 
 // Connecting to MongoDB database
 mongoose.connect(process.env.DB_URL)
