@@ -62,6 +62,14 @@ Technologies used in the project:
 
 <h2>🔗 Routes and Descriptions</h2>
 
+### Sample Login Credentials
+* User:
+  - Email: sample@gmail.com
+  - Password: 123
+* Admin:
+  - Email: admin@gmail.com
+  - Password: 123
+
 ### Users
 * `POST /signup` - User sign-up.
 * `POST /login` - User sign-in.
