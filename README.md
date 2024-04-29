@@ -35,6 +35,7 @@ git clone https://github.com/sanjidrahman/wasserstoff-BackendTask.git
 <p>2. Install dependencies</p>
 
 ```
+cd wasserstoff-BackendTask
 npm install
 ```
 
