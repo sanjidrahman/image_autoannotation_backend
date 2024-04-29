@@ -4,7 +4,7 @@
 
 <h2>🚀 Demo</h2>
 
-[http://localhost:5050](http://localhost:5050)
+[https://backendtask-q8k1.onrender.com](https://backendtask-q8k1.onrender.com)
 
   
   
@@ -25,7 +25,7 @@ Here're some of the project's best features:
 <p>1. Clone project</p>
 
 ```
-https://github.com/sanjidrahman/wasserstoff-BackendTask.git
+git clone https://github.com/sanjidrahman/wasserstoff-BackendTask.git
 ```
 
 <p>2. Install dependencies</p>
@@ -37,7 +37,7 @@ npm install
 <p>3. Setup .env file</p>
 
 ```
-link to the env 
+link to the env file: https://drive.google.com/file/d/1Vru_E4cN_lfNdD_MMqwE2O9EbDezvMye/view?usp=sharing
 ```
 
 <p>4. Start project</p>
@@ -80,3 +80,7 @@ Technologies used in the project:
 * `PATCH /admin/reject/:id` -  Reject an image after reviewing annotations. (Replace ':id' with the image's _id)
 * `GET /admin/export` - Export approved images in the desired format. (Specify format as a query parameter, e.g., /admin/export?format=csv)
 * `GET /admin/export/:id` - Export annotations of a particular image in the desired format. (Specify format as a query parameter, e.g., /admin/export/<id>?format=csv)
+
+### Notes
+1. Backend is deployed on Render. Inactivity may cause delays in requests by 50 seconds or more.
+2. When "Not Authorized" message is shown, ensure authorization by adding the following header in testing tools like Postman: `Authorization: Bearer <your jwt token>`
