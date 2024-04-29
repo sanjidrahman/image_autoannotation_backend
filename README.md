@@ -63,12 +63,20 @@ Technologies used in the project:
 <h2>🔗 Routes and Descriptions</h2>
 
 ### Users
-* `/signup` - User sign-up
-* `/login` - User login
-* Add more user-related routes as needed.
+* `POST /signup` - User sign-up.
+* `POST /login` - User sign-in.
+* `POST /upload` - Handles user-uploaded image and returns annotations. (Use 'file' as the key to upload file)
 
 ### Admin
-* `/admin/dashboard` - Admin dashboard
-* `/admin/users` - View and manage users
-* `/admin/images` - View and manage images
-* Add more admin-related routes as needed.
+* `POST /admin/signup` - Admin sign-up.
+* `POST /admin/signin` - Admin sign-in.
+* `PATCH /admin/block/:id` - Block user access. (Replace ':id' with the user's _id)
+* `PATCH /admin/block/:id` - Unblock user access. (Replace ':id' with the user's _id)
+* `GET /admin/userimages/:id` -  Retrieve all images uploaded by a specific user. (Replace ':id' with the user's _id)
+* `GET /admin/users` -  Retrieve all users.
+* `GET /admin/images` - Retrieve all uploaded images.
+* `GET /admin/image/:id` -  View details of a specific image. (Replace ':id' with the image's _id)
+* `PATCH /admin/approve/:id` - Approve an image after reviewing annotations. (Replace ':id' with the image's _id)
+* `PATCH /admin/reject/:id` -  Reject an image after reviewing annotations. (Replace ':id' with the image's _id)
+* `GET /admin/export` - Export approved images in the desired format. (Specify format as a query parameter, e.g., /admin/export?format=csv)
+* `GET /admin/export/:id` - Export annotations of a particular image in the desired format. (Specify format as a query parameter, e.g., /admin/export/<id>?format=csv)
