@@ -59,3 +59,16 @@ Technologies used in the project:
 *   Mongoose
 *   AWS S3 Bucket
 *   AWS Rekognition
+
+<h2>🔗 Routes and Descriptions</h2>
+
+### Users
+* `/signup` - User sign-up
+* `/login` - User login
+* Add more user-related routes as needed.
+
+### Admin
+* `/admin/dashboard` - Admin dashboard
+* `/admin/users` - View and manage users
+* `/admin/images` - View and manage images
+* Add more admin-related routes as needed.
