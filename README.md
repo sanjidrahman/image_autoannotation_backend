@@ -22,6 +22,7 @@ Here're some of the project's best features:
 *   Restricting access of users by admin
 *   Image storing in S3 Bucket
 *   Auto annotations using AWS Rekognition
+*   Utilised Native Cluster for Scalabily and Performance
 
 <h2>🛠️ Installation Steps:</h2>
 
