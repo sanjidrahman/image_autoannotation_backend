@@ -171,7 +171,7 @@ const reject = async (req, res) => {
 // Function for exporting all approved images 
 const exportAllData = async (req, res) => {
     try {
-        const format = req.query.format.toLowerCase(); // Get the requested format for exporting
+        const format = req.query.format?.toLowerCase(); // Get the requested format for exporting
 
         if(!format) {
             return res.status(404).json({ message: 'No format selected' })
@@ -210,7 +210,7 @@ const exportAllData = async (req, res) => {
 // Function for exporting single image details
 const exportData = async (req, res) => {
     try {
-        const format = req.query.format.toLowerCase();
+        const format = req.query.format?.toLowerCase();
         const imgId = req.params.id;
 
         if(!format) {
