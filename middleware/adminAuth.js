@@ -5,13 +5,11 @@ const Admin = require('../models/adminModel'); // Importing the admin model
 const adminAuth = async (req, res, next) => {
     try {
         const authHeaders = req.headers.authorization; // Extracting authorization headers from request
-        console.log(authHeaders);
         if (!authHeaders || !authHeaders.split(' ')[1]) { // Checking if authorization headers are present and contain a token
             return res.status(401).json({ message: 'Not Authorized' });
         }
 
         const token = authHeaders.split(' ')[1];
-        console.log(token);
         const decoded = jwt.verify(token, process.env.ADMIN_SECRET); // Verifying the token using user secret
         const adminData = await Admin.findOne({ _id: decoded.payload.id }); // Finding admin data based on decoded token
 
