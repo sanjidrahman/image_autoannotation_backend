@@ -3,6 +3,9 @@ const userController = require('../controllers/userControllers'); // Importing u
 const userAuth = require('../middleware/userAuth'); // Importing user authentication middleware
 const upload = require('../middleware/multer'); // Importing middleware for handling file uploads
 
+userRoute.get('/', (req, res) => {
+    res.send('Hello from Wasserstoff backend task 👋')
+})
 // Define routes for user functionalities
 userRoute.post('/signup', userController.signup); // Route for user signup
 userRoute.post('/signin', userController.signin); // Route for user signin
