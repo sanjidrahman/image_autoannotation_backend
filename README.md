@@ -100,5 +100,5 @@ Technologies used in the project:
 2. When "Not Authorized" message is shown, ensure authorization by adding the following header in testing tools like Postman: `Authorization: Bearer <your jwt token>`
 
 ## Contact
-If you encounter any issues or have any questions, please feel free to contact us at [sanjidrahman650@gmail.com](mailto:sanjidrahman650@gmail.com).
+If you encounter any issues or have any questions, please feel free to contact at [sanjidrahman650@gmail.com](mailto:sanjidrahman650@gmail.com).
 
