@@ -6,7 +6,7 @@ const s3 = new AWS.S3({ // Creating a new instance of AWS S3 with access credent
 });
 
 // Function to upload a file to AWS S3
-function uploadFile(file) {
+function uploadFileToS3(file) {
     const params = {
         Bucket: process.env.AWS_S3_BUCKET_NAME, // Bucket name 
         Key: file.filename, // Key (filename) for the file in S3
@@ -17,5 +17,5 @@ function uploadFile(file) {
 }
 
 module.exports = {
-    uploadFile
+    uploadFileToS3
 }

@@ -2,7 +2,7 @@ const User = require('../models/userModel'); // Importing the user model
 const Image = require('../models/imageModel'); // Importing the image model
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
-const { uploadFile } = require('../config/s3'); // Importing file upload function from S3 configuration
+const { uploadFileToS3 } = require('../config/s3'); // Importing file upload function from S3 configuration
 const { detectLabels } = require('../config/autoannotation');  // Importing image annotation function
 
 // Function for hashing passwords securely
@@ -89,7 +89,7 @@ const upload = async (req, res) => {
             return res.status(400).json({ message: 'No file uploaded' });
         }
 
-        const { Location, Key } = await uploadFile(image); // Uploading image to S3 and getting Location and Key
+        const { Location, Key } = await uploadFileToS3(image); // Uploading image to S3 and getting Location and Key
         const annotations = await detectLabels(Key); // Detecting labels in the uploaded image
         const newData = new Image({
             userId,
